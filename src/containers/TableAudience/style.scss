@@ -1,0 +1,31 @@
+
+.audience {
+    padding: 0.5rem 0;
+    &-box {
+      padding-left: 1rem;
+      flex: 0 0 150px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    &__name {
+      font-weight: 700;
+      font-size: 20px;
+      padding: 0;
+      margin: 0;
+    }
+    &__count {
+      font-weight: 400;
+      color: rgb(4, 179, 179);
+      font-size: 12px;
+    }
+  }
+  
+  .cell-box {
+    position: relative;
+    padding: 4px;
+    min-height: 100px;
+    width: 5em;
+    border: 1px solid #ccc;
+  }
+  

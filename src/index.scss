@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+* {
+  font-family: "Roboto", "sans-serif";
+  box-sizing: border-box;
+}
+
+.App {
+  overflow-x: auto;
+  overflow-y: hidden;
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: darkgrey;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgb(70, 70, 70);
+  }
+}
+ul {
+  display: flex;
+  gap: 1rem;
+}
+.d-flex {
+  display: flex;
+  align-items: center;
+  gap: em;
+  overflow-x: auto;
+  justify-content: space-between;
+}
+.d-block {
+  flex: auto;
+  width: 100px;
+}
+
+.table {
+  margin: 0 auto;
+  width: 1940px;
+  margin-bottom: 20px;
+  border: 15px solid #f2f8f8;
+  border-top: 5px solid #f2f8f8;
+  border-collapse: collapse;
+  &-head__cell {
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    font-weight: bold;
+    background: #f2f8f8;
+    border: none;
+    border-bottom: 5px solid #f2f8f8;
+    &:not(:last-child, :first-child) {
+      &::after {
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 3px;
+        background-color: #ccc;
+      }
+    }
+  }
+}
+
+.table td {
+  padding: 10px;
+  border: none;
+  border-bottom: 5px solid #f2f8f8;
+  min-height: 120px;
+}

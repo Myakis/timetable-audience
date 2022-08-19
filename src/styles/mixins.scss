@@ -1,0 +1,23 @@
+@use "sass:math";
+// =============================================================================
+// Функции пересчета значений
+// =============================================================================
+@mixin size($val) {
+  width: $val;
+  height: $val;
+}
+
+@function strip-unit($num) {
+  @return math.div($num, ($num * 0 + 1));
+}
+@function rem($num) {
+  @return math.div(strip-unit($num), 16) * 1rem;
+}
+
+@function em($num, $root: 16) {
+  @return math.div(strip-unit($num), $root) * 1em;
+}
+
+@function vw($num, $root: 1440) {
+  @return math.div(strip-unit($num), $root) * 100vw;
+}

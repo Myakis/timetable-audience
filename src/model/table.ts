@@ -1,6 +1,7 @@
 export interface IEvent {
   id: string;
   name?: string;
+  titleAudience?: string;
   description?: string;
   type?: string;
   time?: string[];

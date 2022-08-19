@@ -3,6 +3,7 @@ import cn from "classnames";
 import { DraggingStyle, NotDraggingStyle } from "react-beautiful-dnd";
 import moment from "moment";
 import "./style.scss";
+import { diffTime } from "../../../../helpers/diffTime";
 
 interface IProps {
   event: {
@@ -26,10 +27,8 @@ const EventCard: FC<IProps> = ({ event, isDragging, disabled, dragStyle }) => {
     setWidthEl(width);
   }, [ref]);
 
-  const startEventTime = moment(event.time![0], "HH:mm");
-  const endEventTime = moment(event.time![1], "HH:mm");
   // Разница в часах
-  const hours = endEventTime.diff(startEventTime, "m") / 60;
+  const hours = diffTime(event.time);
 
   return (
     <div

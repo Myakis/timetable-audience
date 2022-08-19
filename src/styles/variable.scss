@@ -1,0 +1,33 @@
+@import "./mixins.scss";
+
+$br: rem(6); //border-radius
+
+$body-bg: #f6f7f9; //body background-color
+$border-default: #ececec;
+$border-blue: #498fe1;
+
+$text-success: #5ca809;
+$text-error: #f26475;
+$text-inactive: #878787;
+
+$btn-bg: #4a90e2;
+$btn-bg-light: #d8e3f0;
+$btn-color-light: #7d9fc7;
+$btn-bg-green: #73b42b;
+$btn-bg-click-green: #65a322;
+$btn-bg-red: #c23516;
+$btn-bg-click-red: #b22506;
+$btn-b-contour: #cbcbcb;
+$btn-color-contour: #848484;
+
+$title-color: rgba(63, 63, 63, 0.8);
+$blue-link: #4a90e2;
+
+$text-grey: #717982;
+
+$error: #ec8787;
+$success: #7ed321;
+
+$user-online: #a5df6b;
+
+$xl: 1600px;

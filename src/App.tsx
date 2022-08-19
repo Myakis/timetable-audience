@@ -1,9 +1,9 @@
-import TableAudience from "./containers/TableAudience";
+import Main from "./containers/Main";
 
 function App() {
   return (
     <div className="App">
-      <TableAudience />
+      <Main />
     </div>
   );
 }

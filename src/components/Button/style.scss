@@ -1,0 +1,20 @@
+.btn {
+  font-size: 1rem;
+  background-color: inherit;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  padding: 0.3rem;
+  &:disabled {
+    cursor: default;
+  }
+  &-gray {
+    background-color: #ccc;
+    
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: rgb(133, 117, 117);
+      }
+    }
+  }
+}

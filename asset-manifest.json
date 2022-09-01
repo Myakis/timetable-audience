@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/timetable-audience/static/css/main.398d3d02.css",
+    "main.css": "/timetable-audience/static/css/main.389f05bb.css",
     "main.js": "/timetable-audience/static/js/main.a3ad13d3.js",
     "static/media/empty.svg": "/timetable-audience/static/media/empty.05b038e20bc86c50d156.svg",
     "static/media/gobbler.svg": "/timetable-audience/static/media/gobbler.20abe024d02f74964dfc.svg",
     "static/media/delete.svg": "/timetable-audience/static/media/delete.d344f2b296006415d876.svg",
     "index.html": "/timetable-audience/index.html",
-    "main.398d3d02.css.map": "/timetable-audience/static/css/main.398d3d02.css.map",
+    "main.389f05bb.css.map": "/timetable-audience/static/css/main.389f05bb.css.map",
     "main.a3ad13d3.js.map": "/timetable-audience/static/js/main.a3ad13d3.js.map"
   },
   "entrypoints": [
-    "static/css/main.398d3d02.css",
+    "static/css/main.389f05bb.css",
     "static/js/main.a3ad13d3.js"
   ]
 }

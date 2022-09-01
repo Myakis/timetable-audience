@@ -4,39 +4,46 @@ import EventCard from "../Event";
 import { IEvent } from "../../../../model/table";
 
 interface IProps {
-  provided: DroppableProvided;
   event: IEvent;
   isDropDisabled: boolean;
   index: number;
+  confirmBookingHandler: (id: string) => void;
+  deleteEventHandler: (id: string) => void;
 }
 
-const TableCell: FC<IProps> = ({ provided, event, index, isDropDisabled }) => {
+const TableCell: FC<IProps> = ({
+  event,
+  index,
+  isDropDisabled,
+  confirmBookingHandler,
+  deleteEventHandler,
+}) => {
   return (
-      <div {...provided.droppableProps} ref={provided.innerRef} className={"cell-box"}>
-        <Draggable draggableId={event.id} index={index} isDragDisabled={isDropDisabled}>
-          {(provided, snapshot) => {
-            return (
-              <div
-                ref={provided.innerRef}
-                {...provided.draggableProps}
-                {...provided.dragHandleProps}
-                style={{
-                  userSelect: "none",
-                  ...provided.draggableProps.style,
-                }}
-              >
-                {event.name && (
-                  <EventCard
-                    event={event}
-                    isDragging={snapshot.isDragging}
-                    disabled={isDropDisabled}
-                  />
-                )}
-              </div>
-            );
-          }}
-        </Draggable>
-      </div>
+    <Draggable draggableId={event.id} index={index} isDragDisabled={isDropDisabled}>
+      {(provided, snapshot) => {
+        return (
+          <div
+            ref={provided.innerRef}
+            {...provided.draggableProps}
+            {...provided.dragHandleProps}
+            style={{
+              height: '100%',
+              ...provided.draggableProps.style,
+            }}
+          >
+            {event.time && (
+              <EventCard
+                confirmBookingHandler={confirmBookingHandler}
+                deleteEventHandler={deleteEventHandler}
+                event={event}
+                isDragging={snapshot.isDragging}
+                disabled={isDropDisabled}
+              />
+            )}
+          </div>
+        );
+      }}
+    </Draggable>
   );
 };
 

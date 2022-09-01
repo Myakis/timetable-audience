@@ -35,9 +35,16 @@ export const colorStyles: StylesConfig<any> = {
     return {
       ...styles,
       maxHeight: 270,
+      position: "relative",
       "::-webkit-scrollbar": { width: "10px" },
       "::-webkit-scrollbar-track": { background: "darkgrey", borderRadius: 7 },
       "::-webkit-scrollbar-thumb": { borderRadius: 7, background: "rgb(70, 70, 70)" },
+    };
+  },
+  menu: (styles) => {
+    return {
+      ...styles,
+      zIndex: 2,
     };
   },
   indicatorSeparator: (styles) => ({ ...styles, display: "none" }),

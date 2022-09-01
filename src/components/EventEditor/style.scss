@@ -1,0 +1,12 @@
+.booking {
+  &__success {
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem;
+  }
+  &__button {
+    margin-top: 1rem;
+    display: block;
+    margin-left: auto;
+  }
+}

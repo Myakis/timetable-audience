@@ -10,10 +10,19 @@
   }
   &-gray {
     background-color: #ccc;
-    
+
     @media (any-hover: hover) {
       &:hover {
         background-color: rgb(133, 117, 117);
+      }
+    }
+  }
+  &-light-blue {
+    background-color: #9fd1e4a6;
+
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: #7acef0a6;
       }
     }
   }

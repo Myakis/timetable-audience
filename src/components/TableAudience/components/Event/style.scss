@@ -1,12 +1,27 @@
 .event {
+  overflow-y: auto;
+  z-index: 1;
   position: absolute;
   transition: all 0.3s ease 0s;
-  width: 78%;
+  // width: 78%;
   border-radius: 10px;
   padding: 10px;
+  height: 100%;
   position: relative;
   background: #daf1f3;
   padding-left: 25px;
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  &::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: darkgrey;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: rgb(70, 70, 70);
+  }
   &.disabled {
     background: #ccc;
     cursor: auto;
@@ -47,6 +62,7 @@
   &__description {
     font-size: 14px;
     margin: 0;
+    transition: all 0.3s ease 0s;
   }
   &__side {
     height: 100%;
@@ -77,9 +93,31 @@
       }
     }
   }
+  &__btn {
+    padding: 12px;
+    top: 30%;
+    transform: translate(-50%, -50%) scale(1);
+    right: 0;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    @media (any-hover: hover) {
+      &:hover {
+        transform: scale(1.1) translate(-50%, -50%);
+      }
+    }
+    &-delete{
+      top: 80%;
+      right: -3px;
+    }
+  }
 }
 .event-move {
-  transform: rotate(-5deg);
+  transform: rotate(2deg);
   opacity: 0.7;
-  transform: scale(0.9);
+  // transform: scale(1.02);
 }
+

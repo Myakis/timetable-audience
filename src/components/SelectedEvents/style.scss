@@ -4,7 +4,14 @@
   gap: 1rem;
   max-width: 1920px;
   margin: 0 auto;
+  @media (max-width: 567px) {
+    flex-direction: column;
+  }
 }
 .select {
-  width: 20rem;
+  max-width: 20rem;
+  width: 100%;
+  @media (max-width: 567px) {
+    width: 300px;
+  }
 }

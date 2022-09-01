@@ -1,7 +1,7 @@
 export interface IEvent {
   id: string;
+  isBooking: boolean;
   name?: string;
-  titleAudience?: string;
   description?: string;
   type?: string;
   time?: string[];
@@ -12,6 +12,11 @@ export interface IAudience {
   count: string;
   title: string;
 }
+
+export type ApiEvents = {
+  audience: IAudience;
+  events: IEvent[];
+};
 
 export type TColumns = {
   [id: string]: {

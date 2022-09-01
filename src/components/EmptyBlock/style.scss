@@ -1,0 +1,13 @@
+.empty{
+    &-xl{
+        max-width: 200px;
+        height: 200px;
+    }
+    &-center{
+        text-align: center;
+        margin: 0 auto;
+    }
+    &-box{
+        margin: 1rem 0 2rem 0 ;
+    }
+}

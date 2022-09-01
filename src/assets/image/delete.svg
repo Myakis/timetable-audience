@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 16 16" style="enable-background:new 0 0 512 512" xml:space="preserve">
+	<g>
+		<linearGradient xmlns="http://www.w3.org/2000/svg" id="_Linear1" gradientTransform="matrix(10.5 -13.5 13.5 10.5 3.032 79.476)" gradientUnits="userSpaceOnUse" x1="0" x2="1" y1="0" y2="0">
+			<stop offset="0" stop-color="#0056e0" />
+			<stop offset="1" stop-color="#00e5b8" />
+		</linearGradient>
+		<g xmlns="http://www.w3.org/2000/svg" transform="translate(-2 -65)">
+			<g transform="translate(1.968 2.024)">
+				<path d="m14.352 67.5h-12.704l.874 8.749c.128 1.278 1.204 2.251 2.488 2.251h5.98c1.284 0 2.36-.973 2.488-2.251zm-7.852 7.5v-6c0-.276-.224-.5-.5-.5s-.5.224-.5.5v6c0 .276.224.5.5.5s.5-.224.5-.5zm4 0v-6c0-.276-.224-.5-.5-.5s-.5.224-.5.5v6c0 .276.224.5.5.5s.5-.224.5-.5zm1-9.5h3.5c.276 0 .5.224.5.5s-.224.5-.5.5h-14c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h3.5v-.5c0-.398.158-.779.439-1.061.282-.281.663-.439 1.061-.439h4c.398 0 .779.158 1.061.439.281.282.439.663.439 1.061z" fill="url(#_Linear1)" data-original="url(#_Linear1)" />
+			</g>
+		</g>
+	</g>
+</svg>

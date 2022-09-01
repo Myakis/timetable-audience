@@ -23,10 +23,7 @@
     background: rgb(70, 70, 70);
   }
 }
-ul {
-  display: flex;
-  gap: 1rem;
-}
+
 .d-flex {
   display: flex;
   align-items: center;
@@ -41,9 +38,9 @@ ul {
 
 .table {
   margin: 0 auto;
-  width: 1940px;
+  width: 1950px;
   margin-bottom: 20px;
-  border: 15px solid #f2f8f8;
+  border: 16px solid #f2f8f8;
   border-top: 5px solid #f2f8f8;
   border-collapse: collapse;
   &-head__cell {
@@ -54,6 +51,9 @@ ul {
     background: #f2f8f8;
     border: none;
     border-bottom: 5px solid #f2f8f8;
+    &:first-child{
+     flex: 0 0 180px;
+    }
     &:not(:last-child, :first-child) {
       &::after {
         content: "";
@@ -69,18 +69,57 @@ ul {
   }
 }
 
-.table td {
-  padding: 10px;
-  border: none;
-  border-bottom: 5px solid #f2f8f8;
-  min-height: 120px;
-}
-
 .title {
   text-align: center;
   color: $title-color;
   font-size: rem(40);
 }
-.flex-left{
+.subtitle {
+  text-align: center;
+  color: $title-color;
+  font-size: rem(30);
+}
+.flex-left {
   margin-left: auto;
+}
+
+.form-edit {
+  width: 100%;
+}
+
+.field-input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin: 0.3rem;
+  border-radius: 10px;
+  border: none;
+  display: block;
+  font-size: 1.4rem;
+}
+
+.success-text {
+  color: $text-success;
+  text-align: center;
+}
+.error-text {
+  color: $btn-bg-click-red;
+}
+
+.empty {
+  background-image: url("../assets/image/empty.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.gobbler {
+  background-image: url("../assets/image/gobbler.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.delete {
+  background-image: url("../assets/image/delete.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
 }
